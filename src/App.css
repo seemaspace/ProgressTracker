@@ -1,0 +1,92 @@
+/*
+  --------------TYPOGRAPHY--------------------------
+    -FONT WEIGHTS
+        Headings - 500 to 900
+        Rest - 300 to 400
+    - LINE HEIGHTS
+        headings 1 to 1.2
+        blocks of text 1.5 for readability
+    - FONT SIZES
+        12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
+    -LETTER SPACING
+        0 / -2px
+    - FONT FAMILY
+        Poppins
+
+  ---------- COLORS ----------
+
+    PRIMARY
+      Base: #ffec3d (Bee Yellow)
+      Tint: #fef9c1 (Cheese Yellow)
+      Shade: #ffc53d (Yolk Yellow)
+
+    SECONDARY
+      Base: #ff922b (Orange)
+      Tint: #ffe8cc (Peach Tea)
+      Shade: #f76707 (Algerian Coral Orange)
+
+    GREY
+      Base: #495057 (Slate)
+      Tint: #f1f3f5 (Pebble)
+      Shade: #212529 (Graphite)
+      White: #ffffff (White)
+      Black: #000000 (Black)  
+    
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+/*
+    Keep blocks of text with images left or right aligned, otherwise keep em centered.
+*/
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+p,
+a {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  color: #495057;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*
+    Anchor link design standard for nav elements
+    - Always remove the under line from the links
+*/
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
