@@ -32,7 +32,7 @@ function Footer() {
           </li>
         </ul>
       </section>
-      <p className="footer-bottom">Made with ❤️️ by Seema</p>
+      <p className="small-text footer-bottom">Made with ❤️️ by Seema</p>
     </footer>
   );
 }

@@ -15,6 +15,8 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Home />} />
+          <Route path="/register" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/tracker" element={<ProgressTracker />} />
         </Routes>
