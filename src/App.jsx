@@ -9,7 +9,7 @@ import Footer from "./Footer";
 function App() {
   return (
     <Router>
-      
+      <div className="container">
       <Header />
 
       <main className="main-content">
@@ -23,6 +23,8 @@ function App() {
       </main>
 
       <Footer />
+
+      </div>
 
     </Router>
   );
