@@ -77,7 +77,7 @@ body{
 }
 
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /*Body inherited text properties have lower specificity so will be overriden*/
@@ -260,7 +260,8 @@ margin-bottom: 300px;
 }
 
 .hero-img{
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 /*-------FEATURES SECTION------*/
 
@@ -279,7 +280,8 @@ margin-bottom: 300px;
 }
 
 .feature-img{
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 /*-------CTA SECTION------*/
 
@@ -290,7 +292,7 @@ margin-bottom: 300px;
 }
 .cta-card{
   background-color: #f76707;
-  width: 1000px;
+  max-width: 1000px;
   padding: 100px 200px;
   border-radius: 20px;
   margin: 0 auto;
