@@ -5,18 +5,29 @@ import About from "./About";
 import ProgressTracker from "./ProgressTracker";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useRef } from "react";
 
 function App() {
+
+    const featuresRef = useRef(null);
+
+  const scrollToFeatureSection = (e)=>{
+    e.preventDefault();
+    featuresRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
   return (
     <Router>
       <div className="container">
-      <Header />
+      <Header props={scrollToFeatureSection} />
 
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Home />} />
-          <Route path="/register" element={<Home />} />
+          <Route path="/" element={<Home props={featuresRef} />} />
+          <Route path="/login" element={<Home props={featuresRef} />} />
+          <Route path="/register" element={<Home props={featuresRef} />} />
           <Route path="/about" element={<About />} />
           <Route path="/tracker" element={<ProgressTracker />} />
         </Routes>

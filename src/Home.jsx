@@ -1,38 +1,15 @@
-import { useRef } from "react";
 import addSteps from './assets/add-steps-anytime.png';
 import completeSteps from './assets/complete-steps.png';
 import measureProgress from './assets/measure-progress.png';
-import compass from './assets/compass.jpg';
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home(props) {
 
-  const featuresRef = useRef(null);
 
-  const scrollToFeatureSection = (e)=>{
-    e.preventDefault();
-    featuresRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  }
 
   return (
     <div className="home-container">
-      <section className="hero-section">
-        <h1 className="hero-heading">Progress Tracker</h1>
-        <p className="hero-paragraph">
-          The roads taken in your journey will keep <span className="highlight highlight-primary">changing</span>. 
-          <br /> 
-          <img className='hero-img' src={compass} alt="compass" />
-          <br />
-          But it helps to always know <span className="highlight highlight-secondary">how far you have come</span> to appreciate the journey.
-        <br />
-        <img className='hero-img' src="https://images.unsplash.com/photo-1609159524764-8b2011efe640?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A note on reflection of one's growth" />
-        </p>
-        <Link className="btn btn-secondary" onClick={scrollToFeatureSection}>Check Features</Link>        
-      </section> 
-      <section ref={featuresRef} className="features">
+      <section ref={props.featuresRef} className="features">
         <h2 className="feature-main-heading">
           What all can you plan?
         </h2>

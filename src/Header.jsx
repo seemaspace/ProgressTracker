@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import compass from './assets/compass.jpg';
 import logo_brand from './logo/branding/progresstrackerlogo.png';
 
-function Header() {
+function Header(props) {
   return (
-    <header>
+    <header className="above-the-fold">
       <nav className="navbar">
         <div className="nav-logo">
           <Link to="/" className="logo-link">
@@ -40,6 +40,19 @@ function Header() {
           </li>
         </ul>
       </nav>
+
+            <section className="hero-section">
+              <h1 className="hero-heading">Progress Tracker</h1>
+              <p className="hero-paragraph">
+                The roads taken in your journey will keep <span className="highlight highlight-primary">changing</span>. 
+                <br /> 
+                <img className='hero-img' src={compass} alt="compass" />
+                <br />
+                But it helps to always know <span className="highlight highlight-secondary">how far you have come</span> to appreciate the journey.
+              </p>
+              <Link className="btn btn-secondary" onClick={props.scrollToFeatureSection}>Check Features</Link>        
+            </section> 
+      
     </header>
   );
 }
