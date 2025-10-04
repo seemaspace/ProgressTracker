@@ -103,7 +103,7 @@
   --black: #000000;
 
   /*MISCELLANEOUS*/
-  --nav-height: 300px;
+  --nav-height: 100px;
 
 }
 
@@ -300,6 +300,11 @@ padding rule of thuumb for buttons, whatever is the vertical double is for horiz
   align-items: center;
 }
 
+.nav-menu{
+ display: flex;
+ align-items: center;  
+ gap: 2rem;
+}
 .nav-logo a::after{
   content: 'Alpha';
   color: brown;
@@ -375,6 +380,18 @@ margin-bottom: 10rem;
   align-items: center;
   gap: 1rem;
 
+}
+
+.socials-section{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links{
+  display: flex;
+  gap: 1.5rem;
 }
 
 .social-icons{
