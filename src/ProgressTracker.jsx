@@ -1,3 +1,5 @@
+import Goal from './Goal'
+
 function ProgressTracker() {
   return (
     <div className="tracker-container">
@@ -21,6 +23,8 @@ function ProgressTracker() {
 
       </form>
       <br />
+
+      <Goal goal_text="props drill practice"/>
       <ul>
         <li>
           Mastering HTML

@@ -277,10 +277,10 @@ padding rule of thuumb for buttons, whatever is the vertical double is for horiz
 }
 
 .logo-md{
-  width: 100px;
+  width: 60px;
 }
 .logo-sm{
-  width: 80px;
+  width: 50px;
 }
 /*---------------------SECTIONS--------------------------------*/
 /*-------HEADER SECTION------*/
@@ -319,18 +319,25 @@ padding rule of thuumb for buttons, whatever is the vertical double is for horiz
 
 .hero-paragraph{
   margin-bottom: 5rem;
+  text-align: center;
+
 }
 
 .hero-section{
-  height: calc(100vh - var(--nav-height));
+  height: calc(90vh - var(--nav-height));
 min-height: 400px;
-text-align: center;
 margin-bottom: 10rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .hero-img{
   max-width: 400px;
   width: 100%;
+  margin-bottom: 5rem;
+  border-radius: 10px;
 }
 /*-------FEATURES SECTION------*/
 
@@ -358,13 +365,16 @@ margin-bottom: 10rem;
   text-align: center;
   height: 30rem;
   margin-bottom: 30rem;
+  display: flex;
+  justify-content: center;
 }
 .cta-card{
   background-color: var(--secondary-shade);
   max-width: 1000px;
-  padding: 10rem 20rem;
+  width: 100%;
+  padding: 7rem 18rem;
   border-radius: 20px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .cta-heading{

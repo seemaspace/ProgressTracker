@@ -45,11 +45,11 @@ function Header(props) {
               <h1 className="hero-heading">Progress Tracker</h1>
               <p className="hero-paragraph">
                 The roads taken in your journey will keep <span className="highlight highlight-primary">changing</span>. 
-                <br /> 
-                <img className='hero-img' src={compass} alt="compass" />
-                <br />
+              
                 But it helps to always know <span className="highlight highlight-secondary">how far you have come</span> to appreciate the journey.
               </p>
+                <img className='hero-img' src={compass} alt="compass" />
+              
               <Link className="btn btn-secondary" onClick={props.scrollToFeatureSection}>Check Features</Link>        
             </section> 
       
